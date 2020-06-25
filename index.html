@@ -1,0 +1,482 @@
+<!-- 
+    Author: Yashwin Sanghi
+    Css Framework: Bootstrap
+    Theme : Solar
+    Source : bootswatch.com     ( Not a ready template , 
+    an equivalent framework to Bootstrap with different colour scheme )
+    Assignment : Jozbiz Internship Task 1 
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Jozby Bakers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon Source Flaticon : https://www.flaticon.com/free-icon/sweets_3081903 -->
+        <link rel="icon" type="image/png" href="./assets/dessert.png">
+        
+        <!-- Using CDN to load bootsrap CSS framework-->
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/solar/bootstrap.min.css" rel="stylesheet" integrity="sha384-iDw+DjLp94cdk+ODAgTY4IZ6d9aaRpG9KHr168TPxrfQ9wv/DTVC+cWyojoxjHBT" crossorigin="anonymous">
+
+        <!-- 
+            Font Awesome Icons
+            Source : https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself 
+        -->
+        <link rel="stylesheet" href="css/all.css">
+
+        <!-- Support Css for home page to help easy customization-->
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+    <body>
+
+        <!-- The Top navbar -->
+        <div class="navbar navbar-expand-lg navbar-dark">
+            <div class="container p-2" style="background-color: rgba(119, 181, 194, 0.938); border-radius: 10px;">
+                <a class="navbar-brand">
+                    <img src="assets/dessert.svg" width="50" height="50" class="d-inline-block align-center" alt=" Logo" loading="lazy">
+                    Jozby Bakers
+                </a>
+                
+                <!-- Button for maintaining responsiveness-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- The Navigation Content-->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                    <ul class="navbar-nav">
+
+                        <!-- Home Option for the nav bar -->
+                        <li class="nav-item active ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./index.html">
+                                
+                                <!-- Home icon provided by font Awesome-->
+                                <i class="fas fa-home"></i>
+                                Home
+                            </a>
+                        </li>
+
+                        <!-- Product Details icon for the nav bar-->
+                        <li class="nav-item ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./productDetails.html">
+
+                                <!-- Info circle icon provided by font Awesome-->
+                                <i class="fas fa-info-circle"></i>
+                                Details
+                            </a>
+                        </li>
+
+                        <!-- Cart for the nav bar-->
+                        <li class="nav-item ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./cart.html">
+                                
+                                <!-- Cart icon provided by font Awesome-->
+                                <i class="fas fa-shopping-cart"></i>
+                                Cart
+                            </a>
+                        </li>
+
+                        <!-- Contact Us for the nav bar-->
+                        <li class="nav-item ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./contactUs.html">
+                                
+                                <!-- Phone icon provided by font Awesome-->
+                                <i class="fas fa-phone"></i>
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <!-- Product Lists for the nav bar-->
+                        <li class="nav-item ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./productList.html">
+
+                                <!-- Boxes icon provided by font Awesome-->
+                                <i class="fas fa-boxes"></i>
+                                Products
+                            </a>
+                        </li>
+
+                        <!-- About us for the nav bar-->
+                        <li class="nav-item ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./aboutUs.html">
+                                
+                                <!-- address card icon provided by font Awesome-->
+                                <i class="fas fa-address-card"></i>
+                                About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Home page content goes here -->
+
+        <!-- Slideshow of highlights -->
+        <div class="container-fluid pl-0 pr-0 slideshow">
+
+            <!-- Define block for the slide show -->
+            <div class="carousel slide h-100" id="homeDisplaySlider" data-ride="carousel">
+                
+                <!-- 
+                    Markers for slides 
+                    For every slide there shall be an indicator.
+                    Indicators are list objects with designated slide numbers
+                    As they have some order , we use Ordered List
+                -->
+                <ol class="carousel-indicators">
+                    <li data-target="#homeDisplaySlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#homeDisplaySlider" data-slide-to="1"></li>
+                    <li data-target="#homeDisplaySlider" data-slide-to="2"></li>
+                    <li data-target="#homeDisplaySlider" data-slide-to="3"></li>
+                </ol>
+
+                <!-- 
+                     The background images and other information goes in here 
+                     (Slide elements are defined here) 
+                -->
+                <div class="carousel-inner h-100">
+
+                    <!-- 
+                        Every slide is descibed as an item. 
+                        To start the slideshow first item should be active
+                    -->
+                    <div class="carousel-item active">
+                        
+                        <!-- Image sourced from : https://images8.alphacoders.com/421/421304.jpg-->
+                        <img src="./assets/home/cupcakes.jpg" class="w-100" alt=" Cupcakes image 1" id="PcCupcake">
+
+                        <!-- Image sourced from : https://cdn.hipwallpaper.com/i/48/30/t7vsaN.jpg-->
+                        <img src="./assets/home/cupcakesMobile.jpg" class="w-100" alt=" Cupcake image 2" id="MobileCupcake">
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="font-weight-bolder">Cupcakes</h1>
+                            <!-- Quote Source: https://delishably.com/desserts/cupcake-quotes-->
+                            <h3>What makes life so sweet? Cupcakes to relish and someone to love.</h3>
+                        </div>
+                    </div>
+
+                    <!-- Second slide Description-->
+                    <div class="carousel-item ">
+                        
+                        <!-- Image Sourced from : https://wallpapercave.com/wp/wp2324436.jpg-->
+                        <img src="./assets/home/pancake.jpg" class="w-100" alt=" Pancakes image 1" id="PcPancake">
+
+                        <!-- Image Sourced from : https://www.itl.cat/pngfile/big/163-1633476_food-pancake-mobile-wallpaper-pancakes-with-raspberries-and.jpg-->
+                        <img src="./assets/home/pancakeMobile.jpg" class="w-100" alt=" Pancakes image 2" id="MobilePancake">
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="font-weight-bolder">Pancakes</h1>
+
+                            <!-- Quote Source : https://www.wiseoldsayings.com/pancake-quotes/-->
+                            <h3>Pancakes don't make the world go 'round. Pancakes are what makes the ride worthwhile.</h3>
+                        </div>
+                    </div>
+
+                    <!-- Third Slide Description-->
+                    <div class="carousel-item ">
+                        
+                        <!-- Image Sourced from : https://wallpapercave.com/wp/wp1966936.jpg-->
+                        <img src="./assets/home/cookie.jpg" class=" w-100" alt=" Cookie image 1" id="PcCookie">
+                        
+                        <!-- Image Sourced from : https://mfiles.alphacoders.com/701/701919.jpg-->
+                        <img src="./assets/home/cookieMobile.jpg" class="w-100" alt="Cookie image 2" id="MobileCookie">
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="font-weight-bolder">Cookie</h1>
+                            <!--Quote Source : https://www.wiseoldsayings.com/cookies-quotes/ -->
+                            <h3>Fortune cookies are a good idea. If the message is positive, it can make your day a little better.</h3>
+                        </div>
+                    </div>
+
+                    <!-- Fourth Slide Description-->
+                    <div class="carousel-item ">
+                        
+                        <!-- Image Sourced from : https://images8.alphacoders.com/462/thumb-1920-462101.jpg-->
+                        <img src="./assets/home/bread.jpg" class=" w-100" alt=" Bread image 1" id="PcBread">
+                        
+                        <!-- Image Sourced from : https://mfiles.alphacoders.com/736/736376.jpg-->
+                        <img src="./assets/home/breadMobile.jpg" class="w-100" alt="Bread image 2" id="MobileBread">
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="font-weight-bolder">Breads and Tortillas</h1>
+                            
+                            <!--Quote Source : https://www.villagevoice.com/2011/08/09/the-20-greatest-bread-quotes-of-all-time/ -->
+                            <h3>The smell of good bread baking, like the sound of lightly flowing water, is indescribable in its evocation of innocence and delight.</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left/Previous control to go to the previous slide of the Slideshow-->
+                <a class="carousel-control-prev" href="#homeDisplaySlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <!-- Right/Next control to go to the next slide of the Slideshow-->
+                <a class="carousel-control-next" href="#homeDisplaySlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- A Basic Showcase of the Bakery name and Featured Products-->
+        <div class="container-fluid d-flex flex-column justify-content-center pl-0 pr-0 pt-2 pb-2" style="background-color: white; min-height: 40vh; height:max-content;">
+            <div class="container">
+                <div class="d-flex dynamicFlex justify-content-around align-items-center">
+                    
+                    <!-- Feature Products -> 1) Bread -> Image and Icon-->
+                    <div class="d-flex flex-column align-items-center m-4 feature">
+                        <div class="d-inline-flex">
+                            <p style="font-size: 1.8vw; color:#0a0a0a;">Breads</p>
+                        </div>
+                        <div class="d-inline-flex featureImage">
+                            <!-- Icon by Font Awesome-->
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                    </div>
+
+
+                    <!-- Feature Products -> 2) Beverage -> Image and Icon-->
+                    <div class="d-flex flex-column align-items-center m-4 feature">
+                        <div class="d-inline-flex">
+                            <p style="font-size: 1.8vw; color:#0a0a0a;">Beverages</p>
+                        </div>
+                        <div class="d-inline-flex featureImage">
+                            <!-- Icon by Font Awesome-->
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                    </div>
+
+                    <!-- Feature Products -> 3) Cakes -> Image and Icon-->
+                    <div class="d-flex flex-column align-items-center m-4 feature">
+                        <div class="d-inline-flex">
+                            <p style="font-size: 1.8vw; color:#0a0a0a;">Cakes</p>
+                        </div>
+                        <div class="d-inline-flex featureImage">
+                            <!-- Icon by Font Awesome-->
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                    </div>
+
+                    <!-- Feature Products -> 4) Cookies -> Image and Icon-->
+                    <div class="d-flex flex-column align-items-center m-4 feature">
+                        <div class="d-inline-flex">
+                            <p style="font-size: 1.8vw; color:#0a0a0a;">Cookies</p>
+                        </div>
+                        <div class="d-inline-flex featureImage">
+                            <!-- Icon by Font Awesome-->
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                    </div>
+
+                    <!-- Feature Products -> 5) Quick bites -> Image and Icon-->
+                    <div class="d-flex flex-column align-items-center m-4 feature">
+                        <div class="d-inline-flex">
+                            <p style="font-size: 1.8vw; color:#0a0a0a;">Quick Bites</p>
+                        </div>
+                        <div class="d-inline-flex featureImage">
+                            <!-- Icon by Font Awesome-->
+                            <i class="fas fa-pizza-slice"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bakery Name and tagline-->
+            <div class="container mt-4 pt-2 pb-2 mb-4">
+                <div class="d-flex flex-column justify-content-center">
+                    <h3 class="text-uppercase align-self-center pb-2" style="border-bottom: 2px solid #D33682; color:black;">
+                        welcome to jozby
+                    </h3>
+                </div>
+                <div class="d-flex flex-wrap flex-column justify-content-center">
+                    <h5 class="text-wrap text-center text-monospace pt-2" style="color: #0a0a0a;">
+                        In the heart of Hyderabad, between Financial District and Towlichowki-
+                        in a part of the city where you can meet Developers and Managers looking for growth.
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Midway Image for a Highlighted Look-->
+        <div class="container-fluid pl-0 pr-0" >
+            
+            <!-- Image Source: https://www.freepik.com/free-photo/bread-croissants-frame-with-copy-space_6133768.htm-->
+            <div class="midway">
+
+                <!-- Text over the Image-->
+                <div class="d-flex justify-content-center align-self-center" >
+                    <h3 class="text-center p-2 text-uppercase  midwayText text-monospace font-weight-bold" >jozby's quality</h3>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Quality and the Story-->
+        <div class="container-fluid d-flex dynamicFlex pl-0 pr-0 justify-content-center" style="min-height: 18vw;">
+            <div class="d-flex flex-column justify-content-center w-100" style="color:#0a0a0a; background-color:white;">
+                <div class="d-inline-flex justify-content-center pt-3 text-uppercase" >
+                    <h1 class="pb-2" style="border-bottom: 4px solid #CB4B16; font-family: 'Times New Roman', Times, serif;">
+                        quality
+                    </h1>
+                </div>
+                <div class="d-inline-flex justify-content-center text-center p-4 flex-wrap mr-5 ml-5" style="color: #0a0a0a;">
+                    <h5 class="pt-2 text-wrap">
+                        A constant search for excellance, for anything that requires dedication and deep study. Giving us some of the best baked stuff the city has got.
+                    </h5>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center w-100" style="color:#0a0a0a; background-color:#CB4B16;">
+                <div class="d-inline-flex justify-content-center pt-3 text-uppercase " >
+                    <h1 class="pb-2" style="border-bottom: 4px solid white; font-family: 'Times New Roman', Times, serif;">
+                        the story
+                    </h1>
+                </div>
+                <div class="d-inline-flex justify-content-center text-center flex-wrap p-4 mr-5 ml-5" style="color: #0a0a0a;">
+                    <h5 class="pt-2 text-wrap">
+                        A bakery since, 1998 and a well known place in city for foodies. Eat - Chat- Work - Repeat is the jozby's cycle.
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Best Sellers Section-->
+        <div class="container-fluid pl-0 pr-0 pt-4 pb-4 d-flex flex-column justify-content-center bg-light" style="min-height: 40vh; color:rgba(0, 0, 0, 0.7);">
+            
+            <!-- The heading 'best seller'-->
+            <div class="d-flex flex-row justify-content-center p-2" style="color:rgba(0, 0, 0, 0.7);font-family: 'Times New Roman', Times, serif;">
+                <h2 class="text-uppercase font-weight-light mt-2">
+                    best sellers
+                </h2>
+            </div>
+            <div class="d-flex dynamicFlex justify-content-center w-100 card-deck p-3">
+            
+                <!-- Best seller product 1) Pizza-->
+                <div class="d-inline-flex justify-content-center p-3">
+                    <div class="card border-light" style="width: 18rem;">
+                    
+                        <!-- Image Source : https://kaboompics.com/photo/8197/eating-delicious-pizza-in-a-cozy-restaurant-->
+                        <img src="assets/home/pizza.jpg" class="card-img-top" alt=" Coffee Image" loading="lazy">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Pizza
+                            </h4>
+    
+                            <!-- Quote Source: https://pizzaneed.com/pizza-quotes/ -->
+                            <p class="card-text">
+                                There's a very little in our world that a foot massage and a thin-crust, everything on it pizza.
+                            </p>
+
+                            <a class="btn btn-success" href="./productDetails.html">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Best seller Item 2) Coffee-->
+                <div class="d-inline-flex justify-content-center p-3">
+                    <div class="card border-light" style="width: 18rem;">
+                    
+                        <!-- Image Source : https://kaboompics.com/photo/8888/woman-read-book-and-drink-coffee -->
+                        <img src="assets/home/coffee.jpg" class="card-img-top" alt=" Coffee Image" loading="lazy">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Coffee
+                            </h4>
+    
+                            <!-- Quote Source: https://www.thebaristalife.com/blogs/blog/barista-lifes-top-117-coffee-quotes-->
+                            <p class="card-text">
+                                Like everyone else who makes the mistake of getting older,
+                                We begin each day with coffee and obituaries
+                            </p>
+
+                            <a class="btn btn-success" href="./productDetails.html">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Best seller Item 3) Cake-->
+                <div class="d-inline-flex justify-content-center p-3">
+                    <div class="card border-light" style="width: 18rem;">
+                    
+                        <!-- Image Source : https://kaboompics.com/photo/9016/cake-with-blue-bow -->
+                        <img src="assets/home/cake.jpg" class="card-img-top" alt=" Coffee Image" loading="lazy">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Cake
+                            </h4>
+    
+                            <!-- Quote Source: https://www.wiseoldsayings.com/cake-quotes/ -->
+                            <p class="card-text">
+                                Cakes are special. Every birthday, 
+                                every celebration ends with something sweet, a cake.
+                            </p>
+
+                            <a class="btn btn-success" href="./productDetails.html">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Footer-->
+        <div class="container-fluid pl-0 pr-0 pt-4 pb-4 d-flex flex-column justify-content-center" style="min-height:40vh; background-color:#0a0a0a; color:white;">
+            
+            <!-- Catchy Words-->
+            <div class="d-flex flex-row justify-content-center p-2" style="color:white;font-family: 'Times New Roman', Times, serif;">
+                <h1 class="text-uppercase font-weight-light">
+                    connect with us
+                </h1>
+            </div>
+
+            <!-- Basic Methods of Communication-->
+            <div class="d-flex dynamicFlex pl-3 pr-3 justify-content-center m-3" style="color: white;">
+                
+                <div class="d-flex flex-column justify-content-center pl-3 pr-3 m-3" >
+                    <img class="m-3 align-self-center" src="assets/home/newsletter.png" alt="Email Icon" >
+                    <h5 class=" m-3 pt-2 pb-2 text-uppercase align-self-center">Newsletter</h5>
+                    <a href="./contactUs.html" class="btn btn-outline-secondary align-self-center mt-3 mb-3">
+                        Contact Us
+                    </a>
+                </div>
+
+                <div class="d-flex flex-column justify-content-center pl-3 pr-3 m-3">
+                    <img class="m-3 align-self-center" src="assets/home/shop.png" alt="Shop Icon">
+                    <h5 class=" m-3 pt-2 pb-2 text-uppercase align-self-center">Shop online</h5>
+                    <a href="./productList.html" class="btn btn-outline-secondary align-self-center mt-3 mb-3">
+                        Go
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Company Logo and name-->
+            <div class="d-flex flex-column justify-content-center m-4 pl-4 pr-4">
+                <img src="assets/dessert.svg" style="width: 10%; height: 10%;" alt="Company Logo" class="align-self-center">
+                <h4 class="align-self-center p-2" style="font-family: monospace;">
+                    Jozby Bakers
+                </h4>
+                <p class="align-self-center p-2"> All rights reserved. © Copyright Protected</p>
+            </div>
+
+        </div>
+
+        
+        <!-- Jquery, Bootstrap JS and Popper JS
+             supporting JS files for Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>

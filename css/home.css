@@ -1,0 +1,117 @@
+/*
+    Author: Yashwin Sanghi
+    Assignment : Jozbiz Internship Task 1
+    Supporting css that helps customize the home page and improve UI
+*/
+
+/* Make the navbar overlap the slideshow*/
+.navbar {
+    position: absolute; 
+    z-index:1;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Make the slide show fix */
+.slideshow  {   position:relative;}
+
+/*  To preserve the quality of the image when looking for responsiveness */
+.carousel-item  {
+    transform-style: preserve-3d;
+    -moz-transform-style: perserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+/* Fix the image to cover full height*/
+.carousel-item img  {
+    height: 100vh;
+}
+
+/*
+    Handling Responsiveness of Images
+    Initially show the images that are higher in resolution
+*/
+#PcCupcake,#PcPancake,#PcCookie,#PcBread                  {  display: block;    }
+#MobileCupcake,#MobilePancake,#MobileCookie,#MobileBread  {  display: none;     }
+
+/*
+    When the screen goes smaller to tablet/mobile range..
+    display the image for smaller screens
+*/
+@media screen and (max-width:600px)    {
+    #PcCupcake,#PcPancake,#PcCookie,#PcBread      {
+        display: none;
+    }
+    #MobileCupcake,#MobilePancake,#MobileCookie,#MobileBread  {
+        display: block;
+    }
+}
+
+/*  To center align the caption in the slide */
+.carousel-caption   {
+    top: 50vh;
+    transform: translateY(-50%);
+    bottom:initial;
+}
+
+
+/* Set the size of the text and icon for the feature list */
+.featureImage  {
+    font-size: 8vw;
+    -webkit-transition: color 0.75s ease-out;
+    -moz-transition: color 0.75s ease-out;
+    -o-transition: color 0.75s ease-out;
+    transition: color 0.75s ease-out;
+}
+.featureImage:hover {   
+    color: #268BD2; 
+    cursor: pointer;
+}
+
+
+/* Initially, the flex should be in flex-row */
+.dynamicFlex    {   flex-direction: row;}
+
+/* When the screen goes to a smaller screen, the orientation should change to column */
+@media screen and (max-width: 600px)    {
+    .dynamicFlex  {   flex-direction:column;    }
+}
+
+/* The midway image Properties*/
+.midway    {
+    background-image: url('../../assets/home/highlight.jpg');
+    height: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 55vh;
+}
+
+/* Midway text colour and border properties*/
+.midwayText {
+    border: 2px solid white;
+    color: white;
+    margin-top: 8vh;
+}
+/*Change the position of the text when entering small screens*/
+@media screen and (max-width: 750px)    {
+    .midwayText {
+        margin-top:24vh;
+    }
+}
+/*Change the position of the text when entering mid-sized screens*/
+@media screen and (min-width:750px) and (max-width:1000px)  {
+    .midwayText {
+        margin-top: 15vh;
+    }
+}
+
+@media screen and (min-width:575px) and (max-width:600px)  {
+    .card-deck  {
+        flex-flow: column;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}

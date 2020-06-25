@@ -1,0 +1,143 @@
+<!-- 
+    Author: Yashwin Sanghi
+    Css Framework: Bootstrap
+    Theme : Solar
+    Source : bootswatch.com     ( Not a ready template , 
+    an equivalent framework to Bootstrap with different colour scheme )
+    Assignment : Jozbiz Internship Task 1 
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Jozby Bakers - Product List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon Source Flaticon : https://www.flaticon.com/free-icon/sweets_3081903 -->
+        <link rel="icon" type="image/png" href="./assets/dessert.png">
+        
+        <!-- Using CDN to load bootsrap CSS framework-->
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/solar/bootstrap.min.css" rel="stylesheet" integrity="sha384-iDw+DjLp94cdk+ODAgTY4IZ6d9aaRpG9KHr168TPxrfQ9wv/DTVC+cWyojoxjHBT" crossorigin="anonymous">
+
+        <!-- 
+            Font Awesome Icons
+            Source : https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself 
+        -->
+        <link rel="stylesheet" href="css/all.css">
+
+        <!-- Support Css for  page to help easy customization-->
+        <link rel="stylesheet" href="css/productLists.css">
+    </head>
+    <body style="background-color: #0a0a0a;">
+
+        <!-- The Top navbar -->
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container p-2" >
+                <a class="navbar-brand">
+                    <img src="assets/dessert.svg" width="50" height="50" class="d-inline-block align-center" alt=" Logo" loading="lazy">
+                    Jozby Bakers
+                </a>
+                
+                <!-- Button for maintaining responsiveness-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- The Navigation Content-->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                    <ul class="navbar-nav">
+
+                        <!-- Home Option for the nav bar -->
+                        <li class="nav-item ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./index.html">
+                                
+                                <!-- Home icon provided by font Awesome-->
+                                <i class="fas fa-home"></i>
+                                Home
+                            </a>
+                        </li>
+
+                        <!-- Product Details icon for the nav bar-->
+                        <li class="nav-item ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./productDetails.html">
+
+                                <!-- Info circle icon provided by font Awesome-->
+                                <i class="fas fa-info-circle"></i>
+                                Details
+                            </a>
+                        </li>
+
+                        <!-- Cart for the nav bar-->
+                        <li class="nav-item ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./cart.html">
+                                
+                                <!-- Cart icon provided by font Awesome-->
+                                <i class="fas fa-shopping-cart"></i>
+                                Cart
+                            </a>
+                        </li>
+
+                        <!-- Contact Us for the nav bar-->
+                        <li class="nav-item ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./contactUs.html">
+                                
+                                <!-- Phone icon provided by font Awesome-->
+                                <i class="fas fa-phone"></i>
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <!-- Product Lists for the nav bar-->
+                        <li class="nav-item active ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./productList.html">
+
+                                <!-- Boxes icon provided by font Awesome-->
+                                <i class="fas fa-boxes"></i>
+                                Products
+                            </a>
+                        </li>
+
+                        <!-- About us for the nav bar-->
+                        <li class="nav-item ml-1 mr-1" style="cursor: pointer;">
+                            <a class="nav-link" href="./aboutUs.html">
+                                
+                                <!-- address card icon provided by font Awesome-->
+                                <i class="fas fa-address-card"></i>
+                                About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Page content goes here -->
+
+        
+
+        <!-- Footer-->
+        <div class="container-fluid pl-0 pr-0 pt-2 pb-2 d-flex flex-column justify-content-center" style="min-height:30vh; max-height:35vh; background-color:#0a0a0a; color:white;">
+            
+
+            <!-- Company Logo and name-->
+            <div class="d-flex flex-column justify-content-center m-1 pl-4 pr-4">
+                <img src="assets/dessert.svg" style="width: 10%; height: 10%;" alt="Company Logo" class="align-self-center">
+                <h4 class="align-self-center pl-1 pr-1" style="font-family: monospace;">
+                    Jozby Bakers
+                </h4>
+                <p class="align-self-center p-1"> All rights reserved. © Copyright Protected</p>
+            </div>
+
+        </div>
+
+        
+        <!-- Jquery, Bootstrap JS and Popper JS
+             supporting JS files for Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
