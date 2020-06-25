@@ -81,7 +81,7 @@
 
 /* The midway image Properties*/
 .midway    {
-    background-image: url('../../assets/home/highlight.jpg');
+    background-image: url('../assets/home/highlight.jpg');
     height: auto;
     background-position: bottom;
     background-repeat: no-repeat;
